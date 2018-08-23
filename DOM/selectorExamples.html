@@ -1,0 +1,27 @@
+document.URL
+document.links
+document.body
+document.head
+
+
+METHODS
+
+document.getElementById()
+var tag = document.getElementById("highlight");
+
+document.getElementsByClassName()
+var tags = document.getElementsByClassName("bolded");
+console.log(tags[0]);
+
+document.getElementByTagName()
+Returns a list of all elements of a given tag name like li or h1
+var tags = document.getElementByTagName("li");
+console.log(tags[0]);
+
+document.querySelector()
+Returns the first element that matches a given CSS-style selector
+var tag = document.querySelector("#highlight")
+
+document.querySelectorAll()
+Returns all elements that matches a given CSS-style selector
+var tags = document.querySelectorAll("h1");
