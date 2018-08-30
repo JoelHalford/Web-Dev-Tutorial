@@ -1,6 +1,13 @@
 // Check off Specific Todos By Clicking
 
 $("li").click(function(){
-	//if li is gray
 	$(this).toggleClass("completed");
+});
+
+// Click on X to delete Todo
+$(".delete").click(function(event){
+	$(this).parent().fadeOut(500, function(){
+		$(this).remove();
+	});
+	event.stopPropagation();
 });
