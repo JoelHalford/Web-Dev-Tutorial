@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<title>jQuery Events</title>
+		<link rel="stylesheet" href="">
+		<!-- jQuery local -->
+		<script type="text/javascript" src="../lib/jquery-3.3.1.slim.min.js"></script>
+		<!-- jQuery CDN -->
+		<!-- 
+			<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script> 
+		-->
+	</head>
+	<body>
+		<h1>jQuery Events</h1>
+		<h1>jQuery Events</h1>
+
+		<div>
+			<button>Don't click me</button>
+			<button>Seriously don't click me</button>
+			<button>This is your last warning!</button>
+		</div>
+		<div>
+			<br>
+			<input type="text">
+		</div>
+
+		<ul>
+			<li><strong>click()</strong></li>
+			<p>
+				//prints when item with id 'submit' is clicked
+				<br>$('#submit').click(function(){
+				<br>console.log("Another click");
+				<br>});
+				<br><br>//alerts when any button is clicked
+				<br>$('button').click(function(){
+				<br>alert("Someone clicked a button");
+				<br>});
+			</p>
+
+			<li><strong>keypress()</strong></li>
+			<p>
+				//listen for any keypress in any text input
+				<br>$('input[type="text"').keypress(function(){
+				<br>alert("text input keypress!");
+				<br>});
+			</p>
+
+			<li><strong>on()</strong></li>
+			<p>
+				//prints when item with id 'submit' is clicked
+				<br>$('#submit').on('click', function(){
+				<br>console.log("Another click");
+				<br>});
+				<br><br>//alerts when ANY button is clicked
+				<br>$('button').on('click', function(){
+				<br>console.log("Button clicked!");
+				<br>});
+			</p>
+		</ul>
+		<script type="text/javascript" src="javascript.js"></script>
+	</body>
+</html>
